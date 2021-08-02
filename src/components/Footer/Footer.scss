@@ -1,0 +1,17 @@
+@use "src/styles/constants" as *;
+
+.Footer {
+  
+}
+
+@media (min-width: $break-point) {
+  .Footer {
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,32 @@
+@use "src/styles/constants" as *;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+
+  /* remove m in div that gatsby mounts into */
+  > div {
+    margin-top: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $break-point) {
+  //Desktop
+}

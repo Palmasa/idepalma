@@ -1,0 +1,58 @@
+@use "src/styles/constants" as *;
+
+
+@media (min-width: $break-point) {
+  .Navbar {
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .navbar__link {
+      text-decoration: none;
+      color: $c-text-dark;
+      font-size: 1.1rem;
+      position: relative;
+      font-family: "Chivo", sans-serif;
+      font-weight: 300;
+  
+      &::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        background: $c-text-dark;
+        transition: width 0.5s ease 0s, left 0.5s ease 0s;
+        width: 0;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  
+    .navbar__link__active {
+      &::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        background: $c-text-dark;
+        transition: width 0.5s ease 0s, left 0.5s ease 0s;
+        width: 0;
+      }
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillGithub } from 'react-icons/ai' 
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrDocument } from 'react-icons/gr'
-import cv from "../../../public/CV_Ines_de_Palma.pdf"
+import cv from "../../CV_Ines_de_Palma.pdf"
 import './Footer.scss'
 
 const Footer = () => {

@@ -8,17 +8,17 @@ const IndexPage = () => {
     <Layout>
       <div className="Index">
 
-        <div className="index__text">
+        <div className="Index__text">
           <h1>Inés de Palma Masaveu</h1>
-          <p>A really really cool punchline that means something thrive</p>
+          <p>Product Owner by day, developer at night</p>
         </div>
 
-        <div className="index__img">
-          <div className="index__img__container">
+        <div className="Index__img">
+          <div className="Index__img__container">
             <StaticImage
-              className="index__img__profile"
+              className="Index__img__container__profile"
               src="../images/perfil.jpeg"
-              alt="Attomo"
+              alt="Inés"
               placeholder="blur"
             />
           </div>

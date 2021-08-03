@@ -8,10 +8,28 @@
   .Footer {
     position: absolute;
     left: 50%;
-    bottom: 1%;
+    bottom: 0.5%;
     transform: translate(-50%, -50%);
-    width: 8%;
+    width: 12%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: $c-bc-light;
+
+    &__item {
+      position: relative;
+      &__cv {
+        background-color: $c-bc-light;
+        padding: 0;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: $c-text-dark;
+        position: absolute;
+        left: 20%;
+        bottom: 0.5%;
+        transform: translate(-50%, -50%);
+
+      }
+    }
   }
 }

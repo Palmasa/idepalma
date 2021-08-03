@@ -12,6 +12,10 @@ body {
   height: 100%;
   overflow: hidden;
 
+  #___gatsby, #gatsby-focus-wrapper, main {
+    height: 100%;
+  }
+
   /* remove m in div that gatsby mounts into */
   > div {
     margin-top: 0;

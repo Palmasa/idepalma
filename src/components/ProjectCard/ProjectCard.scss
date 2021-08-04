@@ -1,0 +1,70 @@
+@use "src/styles/constants" as *;
+
+.ProjectCard {
+
+}
+
+@media (min-width: $break-point) {
+  .ProjectCard {
+    margin: 15px;
+    position: relative;
+
+    &__video {
+
+      
+    }
+
+
+    &__text {
+      padding: 10px;
+      padding-bottom: 20px;
+      padding-top: 0px;
+      text-align: right;
+
+
+      > h1 {
+       font-size: 32px;
+       
+      }
+  
+      > p { 
+        
+      }
+    }
+
+  }
+}
+
+
+#a:hover > #b {
+  animation-name: swipe-menu-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  transform: translateY(-308px);
+}
+
+#a:hover {
+  animation-name: swipe-menu-down;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  transform: translateY(30px);
+}
+
+
+@keyframes swipe-menu-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-308px);
+  }
+}
+
+@keyframes swipe-menu-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}

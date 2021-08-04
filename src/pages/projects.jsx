@@ -1,48 +1,48 @@
 import React from 'react'
 import Layout from '../layout/Layout'
-import '../styles/projects.scss'
 import DogVideo from '../../src/videos/el-mercado.mp4'
+import '../styles/projects.scss'
+import ProjectCard from '../components/ProjectCard/ProjectCard'
 
 const Projects = () => {
-
-  const playVideo = (id) => {
-    if (document) {
-      const video = document.querySelector(id)
-      video.play();
-    }
-  }
-  const stopVideo = (id) => {
-    if (document) {
-      const video = document.querySelector(id)
-      video.pause();
-    }
-  }
 
   return (
     <Layout>
       <div className="Projects">
 
-        <a  className="Projects__main" href="https://m.el-mercado.es/productos" target="_blank" rel="noreferrer">
-          <h1>El Mercado</h1>
-          <p>MERN Application</p>
-          <video id="video__main" onMouseOver={() => playVideo("#video__main")} onMouseOut={() => stopVideo("#video__main")}  loop muted className="cosa">
-            <source src={DogVideo} type="video/mp4" />
-          </video>
+        <a className="Projects__card" href="https://m.el-mercado.es/productos" target="_blank" rel="noreferrer">
+          <ProjectCard 
+            title="El Mercado"
+            subtitle="MERN Application"
+            description="something goes here"
+            videoId="el-mercado"
+            videoUrl={DogVideo}
+            bcColor="#7FA9B9"
+          />
         </a>
 
-        <div className="Projects__secondary">
+        <a className="Projects__card" href="#" target="_blank" rel="noreferrer">
+          <ProjectCard 
+            title="Rebuelta Domecq"
+            subtitle="JAMStack - Gatsby & Contentful"
+            description="something else here"
+            videoId="EstudioRD"
+            videoUrl={DogVideo}
+            bcColor="#4F8296"
+          />
+        </a>
 
-          <a className="Projects__secondary__top" href="#" target="_blank" rel="noreferrer">
-            <h1>Estudio Rebuelta Domecq</h1>
-            <p>JAMStack - Gatsby & Contentful</p>
-          </a>
+        <a className="Projects__card" href="https://thecoopspain.herokuapp.com/" target="_blank" rel="noreferrer">
+          <ProjectCard 
+            title="Coop"
+            subtitle="SSR Web Application"
+            description="othe description here"
+            videoId="Coop"
+            videoUrl={DogVideo}
+            bcColor="#1D556A"
+          />
+        </a>
 
-          <a className="Projects__secondary__bottom" href="https://thecoopspain.herokuapp.com/" target="_blank" rel="noreferrer">
-            <h1>Coop</h1>
-            <p>SSR Web Application</p>
-          </a>
-
-        </div>
       </div>
     </Layout>
   )

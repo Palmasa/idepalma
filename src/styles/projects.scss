@@ -7,7 +7,7 @@
 @media (min-width: $break-point) {
   .Projects {
     height: calc(100% - 20%);
-    width: 100%;
+    width: calc(100% - 30px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,21 +17,9 @@
     justify-content: center;
     align-items: center;
 
-    &__main {
-      height: 100%;
-      width: 50%;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-
-      .cosa {
-        width: 400px;
-      }
-    }
-
-    &__secondary {
-      height: 100%;
-      width: 50%;
+    &__card {
+      text-decoration: none;
+      color: $c-text-light;
     }
   }
 }

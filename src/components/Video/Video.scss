@@ -1,0 +1,7 @@
+@use "src/styles/constants" as *;
+
+@media (min-width: $break-point) {
+  .Video {
+    width: 100%;
+  }
+}

@@ -7,25 +7,22 @@ const contact = () => {
     <Layout>
       <div className="Contact">
         <div className="Contact__color">
-          <p>Inés de Palma Masaveu</p>
-          <p>ipalmamasaveu@gmail.com</p>
+          <h1>CONTACT ME</h1>
+          
+          <form name="contactMe" method="POST" data-netlify="true">
 
-          <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>Your Name: </label>   
-              <input type="text" name="name" />
-            </p>
-            <p>
-              <label>Your Email: </label>
-              <input type="email" name="email" />
-            </p>
-            <p>
-              <label>Message: </label>
-              <textarea name="message"></textarea>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
+            <label>
+              Contact
+              <input type="text" name="contactInfo" />
+            </label>
+
+            <label>
+              Message:
+              <textarea name="messageSent"></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+
           </form>
 
         </div>

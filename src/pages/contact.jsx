@@ -9,7 +9,8 @@ const contact = () => {
         <div className="Contact__color">
           <p>Inés de Palma Masaveu</p>
           <p>ipalmamasaveu@gmail.com</p>
-          <form name="contact" method="POST" data-netlify="true" action="/projects">
+
+          <form name="contact" method="POST" data-netlify="true">
             <p>
               <label>Your Name: <input type="text" name="name" /></label>   
             </p>
@@ -29,6 +30,7 @@ const contact = () => {
               <button type="submit">Send</button>
             </p>
           </form>
+
         </div>
       </div>
     </Layout>

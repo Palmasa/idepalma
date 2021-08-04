@@ -9,7 +9,7 @@ const contact = () => {
         <div className="Contact__color">
           <h1>CONTACT ME</h1>
           
-          <form name="contactMe" method="POST" data-netlify="true">
+          <form content-type="application/x-www-form-urlencoded" name="contactMe" method="POST" data-netlify="true">
 
             <label>
               Contact
